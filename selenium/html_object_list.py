@@ -25,8 +25,14 @@ class PageObjects:
 
     payment_page_credit_card_button = '[data-uia="payment-choice+creditOrDebitOption"]'
 
-    setup_credit_card_page_name_field = '[data-uia="field-firstName+container"]'
-    setup_credit_card_page_lastname_field = '[data-uia="field-lastName"]'
-    setup_credit_card_page_card_number_field = '[data-uia="field-creditCardNumber"]'
-    setup_credit_card_page_expiration_name_field = '[data-uia="field-creditExpirationMonth"]'
-    setup_credit_card_page_security_code_field = '[data-uia="field-creditCardSecurityCode"]'
+    setup_credit_card_page_fields = {
+        "name": '[data-uia="field-firstName+container"]',
+        "lastname": '[data-uia="field-lastName"]',
+        "card number": '[data-uia="field-creditCardNumber"]',
+        "expiration date": '[data-uia="field-creditCardNumber"]',
+        "security code": '[data-uia="field-creditCardSecurityCode"]'
+                                    }
+
+    setup_credit_card_page_checkboxes = {
+        "DoNotEmail": "something"
+    }

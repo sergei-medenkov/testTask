@@ -22,7 +22,7 @@ step_name = allure.step
 
 def pytest_addoption(parser):
     """PyTest method for adding custom console parameters"""
-    parser.addoption("--driver_conf", action="store", default='chrome edge local', type=str,
+    parser.addoption("--driver_conf", action="store", default='edge local show', type=str,
                      help="Set additional value for driver version setup")
 
 
